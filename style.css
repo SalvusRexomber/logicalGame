@@ -1,0 +1,112 @@
+body {
+    background-image: url("motto.png");
+  }
+#startmenu{
+    background-color: bisque;
+    margin: 20px;
+    border: 3px solid #000;
+    display: flex;
+}
+#gameBoardArea{
+    background-color: bisque;
+    margin: 20px;
+    border: 3px solid #000;
+    display: none;
+}
+.mainColumn{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#gameBoard{
+    border: 3px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    table-layout: fixed;
+    background-color: whitesmoke;
+}
+.bulbIsOnTheCell{
+    background-color: yellow;
+}
+.cell{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    height: 29px;
+    width: 29px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+#levelName{
+    position: relative;
+}
+
+.cell.fixElement{
+    background-color: #000;
+    color: beige;
+}
+.cell.lightElement{
+    background-color: yellow;
+}
+.cell.lightElement.redLightElement{
+    background-color: red;
+}
+.cell.fixElement.moreOrLess{
+    color : red;
+}
+.cell.fixElement.zero{
+    color : green;
+}
+
+#firstColumn{
+    font-family: 'Apple Chancery', cursive;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1;
+    background-color: antiquewhite;
+}
+#firstColumn_2{
+    font-family: 'Apple Chancery', cursive;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1;
+    background-color: antiquewhite;
+}
+#secondColumn{
+    font-family: 'Apple Chancery', cursive;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1;
+    background-color: antiquewhite;
+}
+#secondColumn_2{
+    font-family: 'Apple Chancery', cursive;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1;
+    background-color: antiquewhite;
+}
+
+#levelName{
+    text-align: center;
+}
+.rowClass{
+    height: 39px;
+    text-align: center;
+}
+#start{
+    display: none;
+}

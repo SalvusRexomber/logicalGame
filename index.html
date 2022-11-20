@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Felvillanyozódva</title>
+</head>
+<body>
+    <div id="startmenu">
+        <div id="firstColumn" class="mainColumn" >
+        <p>Kérlek, írd be a neved és válassz egy pályát!</p>
+        <input type="text" name="name" value="" id="chosenOne">
+        <br>
+        <br>
+        <button id="disableMenu" class="threeButton">Irány a játéktér (kezdő)!</button>
+        <br>
+        <br>
+        <button id="disableMenu_2" class="threeButton">Irány a játéktér (haladó)!</button>
+        <br>
+        <br>
+        <button id="disableMenu_3" class="threeButton">Irány a játéktér (mester)!</button>
+        </div>
+        <div id="secondColumn" class="mainColumn">
+            <div id="describe">
+                <h1>
+                    A játékról:
+                </h1>
+                Nekeresdországban <b>Nevenincs királynak</b> egyik szeme sír, a másik nevet. Nevet, mert végre elkészült a hatalmas 
+                kacsalábon forgó palotája, sok-sok tágas szobával és folyosóval. 
+                Ugyanakkor sír is, <b>mert ezeket a helyiségeket be kell világítani</b> és melegen kell tartani, 
+                azonban az aktuális rezsiemelkedés őt is érinti. Itt az ideje tehát elgondolkodni, hogy pontosan <b>hová is helyezzünk el 
+                    villanykörtéket, hogy minden megfelelően be legyen világítva;</b>
+                     ugyanakkor <b>csak oda helyezzünk el izzót, ahol ténylegesen szükség is van rá.</b>
+                <ul>
+                    <li>A királynak négyzet alapú szobái vannak, amelyek fekete és fehér cellákból állnak. A fehér cellákba villanykörtéket lehet elhelyezni.</li>
+                    <li>A villanykörtékből a fény átlósan nem terjed, csak az adott sor és oszlop mentén.</li>
+                    <li>A fekete cellákon valamilyen tereptárgy van, ami akadályozza a fény terjedését.</li>
+                    <li>A fekete cellák opcionálisan egy egész számot is tartalmazhatnak 0-tól 4-ig. Ez azt jelzi, hogy hány szomszédos (alul, felül, jobbra, balra) cella tartalmaz villanykörtét. Ha van ilyen szám, akkor be kell tartani!
+                        Két villanykörte soha nem világíthatja meg egymást!</li>
+                </ul>
+                A játék célja a villanykörtéket úgy elhelyezni, hogy minden fehér cellát megvilágítsanak.
+            </div>
+        </div>
+    </div>
+    <div id="gameBoardArea">
+        <div id="firstColumn_2" class="mainColumn">
+            <div id="userName"></div>
+            <div id="levelName"></div>
+            <div id="tableGenerate">
+            <table id="gameBoard">
+            </table>
+            </div>
+            <button id="endGameCheck">Befejeztem!</button>
+            <br>
+            <div id="result"></div>
+        </div>
+        <div id="secondColumn_2" class="mainColumn">
+            <div id="describe_2">
+                Nekeresdországban Nevenincs királynak egyik szeme sír, a másik nevet. Nevet, mert végre elkészült a hatalmas kacsalábon forgó palotája, sok-sok tágas szobával és folyosóval. Ugyanakkor sír is, mert ezeket a helyiségeket be kell világítani és melegen kell tartani, azonban az aktuális rezsiemelkedés őt is érinti. Itt az ideje tehát elgondolkodni, hogy pontosan hová is helyezzünk el villanykörtéket, hogy minden megfelelően be legyen világítva; ugyanakkor csak oda helyezzünk el izzót, ahol ténylegesen szükség is van rá.
+                <ul>
+                    <li>A királynak négyzet alapú szobái vannak, amelyek fekete és fehér cellákból állnak. A fehér cellákba villanykörtéket lehet elhelyezni.</li>
+                    <li>A villanykörtékből a fény átlósan nem terjed, csak az adott sor és oszlop mentén.</li>
+                    <li>A fekete cellákon valamilyen tereptárgy van, ami akadályozza a fény terjedését.</li>
+                    <li>A fekete cellák opcionálisan egy egész számot is tartalmazhatnak 0-tól 4-ig. Ez azt jelzi, hogy hány szomszédos (alul, felül, jobbra, balra) cella tartalmaz villanykörtét. Ha van ilyen szám, akkor be kell tartani!
+                        Két villanykörte soha nem világíthatja meg egymást!</li>
+                </ul>
+                A játék célja a villanykörtéket úgy elhelyezni, hogy minden fehér cellát megvilágítsanak.
+            </div>
+            <button id="startGame">Start New Game</button>
+            <button id="backToMainPage">Vissza a pályaválasztóhoz!</button>
+            <h1 id="timeName">Játékos játékideje:</h1>
+                <div id="timer">00:00:00</div>
+                <div class="button">
+                <button id="start" onclick="start()">Start</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js" type="module">
+</script>
+</html>

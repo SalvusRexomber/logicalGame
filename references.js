@@ -1,0 +1,15 @@
+export const cell = document.querySelector('#gameBoard');
+export const gameBoardArea = document.querySelector('#gameBoardArea');
+export const startButton = document.querySelector('#startGame');
+export const enableGameBoard = document.querySelector('#disableMenu');
+export const enableGameBoard_2 = document.querySelector('#disableMenu_2');
+export const enableGameBoard_3 = document.querySelector('#disableMenu_3');
+export const endGame = document.querySelector('#endGameCheck');
+export const endResult = document.querySelector('#result');
+export const levelInput = document.querySelector('#levelName');
+export const startmenu = document.querySelector('#startmenu');
+export const backButton = document.querySelector('#backToMainPage');
+export const userName = document.querySelector('#userName');
+export const chosenOne = document.querySelector('#chosenOne');
+export const timerName = document.querySelector('#timeName');
+export const stopButton = document.querySelector('#start');
